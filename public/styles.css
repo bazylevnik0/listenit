@@ -1,0 +1,22 @@
+#play,
+#stop {
+  display: inline-block;
+}
+input {
+  display: inline-block;
+}
+.card {
+  margin: 5px;
+  display: inline-block;
+  border: 2px solid black;
+}
+
+.control {
+  display: inline-block;
+  background-color: black;
+  color: white;
+}
+.add-list,
+.add-card {
+  display: inline-block;
+}
