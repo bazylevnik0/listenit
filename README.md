@@ -1,2 +1,4 @@
 # listenit
-Created with CodeSandbox
+Synth for music
+(react, tone)
+!INWORKING
