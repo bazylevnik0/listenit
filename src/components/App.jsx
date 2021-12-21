@@ -33,17 +33,7 @@ function App() {
   let [data, updateData] = React.useState(["%A4$10000", "%C4$1000%D4$100"]);
   let [view, updateView] = React.useState(
     <div id="container">
-      {data.map((el, index) => {
-        console.log(index);
-        return (
-          <List
-            key={"" + index}
-            id_s={"" + index}
-            data={data}
-            updateData={updateData}
-          />
-        );
-      })}
+     <p>welcome</p>
     </div>
   );
   //out

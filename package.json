@@ -1,7 +1,7 @@
 {
   "name": "listenit",
   "version": "1.0.0",
-  "description": "",
+  "description": "Synth for music (react, tone)\n!INWORKING",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
