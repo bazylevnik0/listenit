@@ -10,7 +10,6 @@ function List(props) {
     temp = props.view;
     props.updateView(
       <div id="container">
-        props.
         {props.data.map((el, index) => {
           return (
             <List
