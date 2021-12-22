@@ -1,5 +1,6 @@
 #play,
-#stop {
+#stop,
+#help-button {
   display: inline-block;
 }
 input {
@@ -19,4 +20,8 @@ input {
 .add-list,
 .add-card {
   display: inline-block;
+}
+
+.hiden {
+  display: none;
 }

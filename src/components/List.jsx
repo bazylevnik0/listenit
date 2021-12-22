@@ -45,7 +45,7 @@ function List(props) {
         );
       })}
       <p className="add-card" onClick={addCard}>
-        🌀
+        ➕
       </p>
     </div>
   );

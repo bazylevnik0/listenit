@@ -39,7 +39,7 @@ function App() {
       <Nav data={data} />
       {view}
       <p className="add-list" onClick={addList}>
-        🌀
+        ➕
       </p>
     </div>
   );

@@ -16,7 +16,6 @@ function Card(props) {
     props.updateData(data);
   }
   function onChangeTime(event) {
-    console.log(props);
     let data = props.data;
     let string = data[+props.id_s];
     string = string.split("%");
