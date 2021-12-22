@@ -3,7 +3,6 @@ import React from "react";
 function Card(props) {
   function onChangeNote(event) {}
   function onChangeTime(event) {}
-  console.log(props.note, props.time);
 
   return (
     <div className="card">

@@ -5,14 +5,13 @@ function List(props) {
   //addCard
   function addCard(event) {
     let temp = props.data;
-    temp[props.id_s] += "%aa$aaaa";
+    temp[props.id_s] += "%A1$1";
     props.updateData(temp);
     temp = props.view;
     props.updateView(
       <div id="container">
         props.
         {props.data.map((el, index) => {
-          console.log(index);
           return (
             <List
               key={"" + index}
@@ -26,15 +25,13 @@ function List(props) {
         })}
       </div>
     );
-    console.log("addCard");
   }
   let cards = props.data[props.id_s].split("%");
   cards = cards.slice(1);
 
-  console.log(cards);
   return (
     <div>
-      <div class="control">a</div>
+      <div className="control">a</div>
       {cards.map(function (el, index) {
         return (
           <Card
@@ -48,7 +45,7 @@ function List(props) {
           />
         );
       })}
-      <p class="add-card" onClick={addCard}>
+      <p className="add-card" onClick={addCard}>
         🌀
       </p>
     </div>
@@ -56,7 +53,3 @@ function List(props) {
 }
 
 export default List;
-
-/*
-         <Card data={props.data} updateData={props.updateData} />
-*/

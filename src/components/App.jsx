@@ -1,10 +1,16 @@
 import React from "react";
 import List from "./List";
+import Nav from "./Nav";
 import "../../public/styles.css";
 
 function App() {
-  //addlist
-
+  //lists
+  let [data, updateData] = React.useState([""]);
+  let [view, updateView] = React.useState(
+    <div id="container">
+      <p>welcome</p>
+    </div>
+  );
   function addList() {
     let temp = data;
     temp.push("");
@@ -13,7 +19,6 @@ function App() {
     updateView(
       <div id="container">
         {data.map((el, index) => {
-          console.log(index);
           return (
             <List
               key={"" + index}
@@ -27,25 +32,13 @@ function App() {
         })}
       </div>
     );
-    console.log(data);
   }
-  //main
-  let [data, updateData] = React.useState(["%A4$10000", "%C4$1000%D4$100"]);
-  let [view, updateView] = React.useState(
-    <div id="container">
-     <p>welcome</p>
-    </div>
-  );
   //out
   return (
     <div>
-      <nav>
-        <p id="play">▶️</p>
-        <p id="stop">⏹</p>
-        <input type="text" value="1000" />
-      </nav>
+      <Nav data={data} />
       {view}
-      <p class="add-list" onClick={addList}>
+      <p className="add-list" onClick={addList}>
         🌀
       </p>
     </div>
