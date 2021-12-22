@@ -18,7 +18,6 @@ function Nav(props) {
         );
       }
     });
-    console.log("play");
   }
   function speedChange(event) {
     setSpeed(event.target.value);
