@@ -29,8 +29,8 @@ function List(props) {
   cards = cards.slice(1);
 
   return (
-    <div>
-      <div className="control">a</div>
+    <div className="list">
+      <div className="list-marker">"</div>
       {cards.map(function (el, index) {
         return (
           <Card
@@ -44,7 +44,7 @@ function List(props) {
           />
         );
       })}
-      <p className="add-card" onClick={addCard}>
+      <p className="add add-card" onClick={addCard}>
         ➕
       </p>
     </div>

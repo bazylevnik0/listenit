@@ -32,9 +32,8 @@ function Card(props) {
 
   return (
     <div className="card">
-      Card
-      <input onChange={onChangeNote}></input>
-      <input onChange={onChangeTime}></input>
+      <input onChange={onChangeNote} placeholder="🎵"></input>
+      <input onChange={onChangeTime} placeholder="🕐"></input>
     </div>
   );
 }

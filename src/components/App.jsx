@@ -5,12 +5,8 @@ import "../../public/styles.css";
 
 function App() {
   //lists
-  let [data, updateData] = React.useState([""]);
-  let [view, updateView] = React.useState(
-    <div id="container">
-      <p>welcome</p>
-    </div>
-  );
+  let [data, updateData] = React.useState([]);
+  let [view, updateView] = React.useState(<div id="container"></div>);
   function addList() {
     let temp = data;
     temp.push("");
@@ -38,7 +34,7 @@ function App() {
     <div>
       <Nav data={data} />
       {view}
-      <p className="add-list" onClick={addList}>
+      <p className="add add-list" onClick={addList}>
         ➕
       </p>
     </div>

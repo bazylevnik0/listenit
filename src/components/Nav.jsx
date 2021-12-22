@@ -33,10 +33,11 @@ function Nav(props) {
       <p id="play" onClick={play}>
         ▶️
       </p>
-      <input type="text" onChange={speedChange} placeholder="1000" />
+      <input id="speed" type="text" onChange={speedChange} placeholder="1000" />
       <p id="help-button" onClick={callHelp}>
         ❔
       </p>
+      <h1>listenit</h1>
       <div className="help-div " style={{ display: helpState }}>
         <h2>main:</h2>
         <p> - add card/list: ➕</p>
